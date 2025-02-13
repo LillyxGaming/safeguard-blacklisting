@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    text-align: center;
+    min-height: 200vh;
+    overflow-y: auto;
+    margin: 0;
+}
+
+/* Fix Background Animation */
+canvas#backgroundCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Keep it behind everything */
+    pointer-events: none;
+}
+
+/* Navigation Bar - Fix Position & Alignment */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Header Section */
+.header {
+    margin-top: 100px;
+    position: relative;
+    z-index: 5;
+}
+
+.logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Info Section */
+.info-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 5;
+}
+
+.info-box {
+    background: rgba(20, 20, 20, 0.85);
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.3);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Stats Section */
+.stats-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px 10%;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 5;
+}
+
+.stats-box {
+    background: rgba(20, 20, 20, 0.85);
+    padding: 15px;
+    width: 180px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.3);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.buttons-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  z-index: 5;
+}
+
+.custom-button {
+  background: rgba(20, 20, 20, 0.85);
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.custom-button:hover {
+  background: rgba(0, 255, 255, 0.6);
+  color: black;
+  box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.6);
+}
+
+.fade-in {opacity: 1;
+transform: translateY(0)
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: rgba(20, 20, 20, 0.9);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  z-index: 5;
+}
